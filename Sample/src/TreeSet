@@ -1,0 +1,24 @@
+import java.util.TreeSet;
+import java.util.Set;
+import java.util.Iterator;
+
+public class TestTreeSet{
+    public static void main(String[] args){
+        
+        Set<String> obj = new TreeSet<String>();
+        
+        obj.add("B");
+        obj.add("A");
+        obj.add("C");
+        
+        Iterator itr = obj.iterator();
+        
+        while(itr.hasNext()){
+            System.out.println("Items.." + itr.next());
+        }
+    }
+}
+
+//Java TreeSet class implements the Set interface that uses a tree for storage. Like HashSet, TreeSet also contains the unique elements However,
+the access and retrieval time of TreeSet is quite fast.
+The elements in TreeSet stored in ascending order.
